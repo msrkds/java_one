@@ -1,0 +1,17 @@
+package ru.geekbrains.lesson_5;
+
+public class HomeWorkApp {
+
+    public static void main(String[] args) {
+
+        Employee[] employeeArray = new Employee[5];
+        employeeArray[0] = new Employee("Иванов Николай Петрович", "ведущий инженер ОИТ", "ivanov@gmail.com", "+77018142345", 180000, 22);
+        employeeArray[1] = new Employee("Петров Иван Владимирович", "главный инженер ОИТ", "petrov@gmail.com", "+77018142342", 205000, 39);
+        employeeArray[2] = new Employee("Пыжин Владимир Викторович", "начальник ОИТ", "pygin@gmail.com", "+77018142340", 250000, 50);
+        employeeArray[3] = new Employee("Сидоров Игорь Сергеевич", "ведущий инженер ОИТ", "sidorov@gmail.com", "+77018142341", 180000, 25);
+        employeeArray[4] = new Employee("Шиков Пётр Николаевич", "главный менеджер ОИТ", "shykov@gmail.com", "+77018142347", 220000, 43);
+
+        for (int i=0; i < employeeArray.length; i++)
+            if (employeeArray[i].getAge() > 40) employeeArray[i].info();
+    }
+}
